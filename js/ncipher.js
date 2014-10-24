@@ -7,8 +7,10 @@
         }
     };
 
-    $(document).ready(function () {
-        $.log("works");
+    $(window).load(function () {
+		$(document).ready(function () {
+			$.log("works");
+		});
     });
     
 }(jQuery, window));
