@@ -6,11 +6,11 @@
 			qFixture = $("#qunit-fixutre"),
 			body = $("body");
 
-		if (test.length === 0) {
-			body.prepend("<div id='qunit' />");
-		}
 		if (qFixture.length === 0) {
 			body.prepend("<div id='qunit-fixture' />");
+		}
+		if (test.length === 0) {
+			body.prepend("<div id='qunit' />");
 		}
 	}
 
