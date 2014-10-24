@@ -3,7 +3,7 @@
 
 	function makeReady () {
 		var qunit = $("#qunit"),
-			qFixture = $("#qunit-fixutre"),
+			qFixture = $("#qunit-fixture"),
 			body = $("body");
 
 		if (qFixture.length === 0) {
