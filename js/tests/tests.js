@@ -17,8 +17,10 @@
 	$(document).ready(function () {
 		(function () {
 			q.module("Screen Dimensions");
-			q.test(function (assert) {
+			q.test("Screen Height", function (assert) {
 				assert.ok($.getScreenHeight);
+			});
+			q.test("Screen Width", function (assert) {
 				assert.ok($.getScreenWidth);
 			});
 		}(makeReady()));
