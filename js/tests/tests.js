@@ -9,7 +9,7 @@
 		if (qFixture.length === 0) {
 			body.prepend("<div id='qunit-fixture' />");
 		}
-		if (test.length === 0) {
+		if (qunit.length === 0) {
 			body.prepend("<div id='qunit' />");
 		}
 	}
