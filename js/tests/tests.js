@@ -18,8 +18,8 @@
 		(function () {
 			q.module("Screen Dimensions");
 			q.test(function (assert) {
-				ok($.getScreenHeight);
-				ok($.getScreenWidth);
+				assert.ok($.getScreenHeight);
+				assert.ok($.getScreenWidth);
 			});
 		}(makeReady()));
 	});
