@@ -18,7 +18,7 @@
 		(function () {
 			q.module("Screen Dimensions");
 			q.test("Screen Height", function (assert) {
-				assert.expect(6);
+				assert.expect(7);
 				assert.ok(
 					$.setScreenHeight,
 					"Assert method exists"
@@ -47,9 +47,16 @@
 					$(window).height(),
 					"Assert method should return window height as integer"
 				);
+				$(window).off("resize").on("resize", function () {
+					assert.strictEqual(
+						$.getScreenHeight(),
+						$(window).height(),
+						"Assert method should return window height as integer after resize event"
+					);
+				});
 			});
 			q.test("Screen Width", function (assert) {
-				assert.expect(6);
+				assert.expect(7);
 				assert.ok(
 					$.setScreenWidth,
 					"Assert method exists"
@@ -78,6 +85,13 @@
 					$(window).width(),
 					"Assert method should return window width as integer"
 				);
+				$(window).off("resize").on("resize", function () {
+					assert.strictEqual(
+						$.getScreenWidth(),
+						$(window).width(),
+						"Assert method should return window width as integer after resize event"
+					);
+				});
 			});
 		}(makeReady()));
 	});
