@@ -18,10 +18,14 @@
 		(function () {
 			q.module("Screen Dimensions");
 			q.test("Screen Height", function (assert) {
+				assert.expect(2);
 				assert.ok($.getScreenHeight);
+				assert.notStrictEqual($.getScreenHeight, null);
 			});
 			q.test("Screen Width", function (assert) {
+				assert.expect(2);
 				assert.ok($.getScreenWidth);
+				assert.notStrictEqual($.getScreenWidth, null);
 			});
 		}(makeReady()));
 	});
