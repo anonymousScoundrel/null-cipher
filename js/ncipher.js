@@ -10,8 +10,16 @@
         }
     };
 
+    $.setScreenHeight = function () {
+        y = $(window).height();
+    };
+
     $.getScreenHeight = function () {
         return y;
+    };
+
+    $.setScreenWidth = function () {
+        x = $(window).width();
     };
 
     $.getScreenWidth = function () {
