@@ -20,12 +20,12 @@
 			q.test("Screen Height", function (assert) {
 				assert.expect(2);
 				assert.ok($.getScreenHeight);
-				assert.notStrictEqual($.getScreenHeight, null, "Method should not return null");
+				assert.notStrictEqual($.getScreenHeight(), null, "Method should not return null");
 			});
 			q.test("Screen Width", function (assert) {
 				assert.expect(2);
 				assert.ok($.getScreenWidth);
-				assert.notStrictEqual($.getScreenWidth, null, "Method should not return null");
+				assert.notStrictEqual($.getScreenWidth(), null, "Method should not return null");
 			});
 		}(makeReady()));
 	});
