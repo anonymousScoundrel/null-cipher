@@ -18,7 +18,6 @@
 		(function () {
 			q.module("Screen Dimensions");
 			q.test("Screen Height", function (assert) {
-				assert.expect(7);
 				assert.ok(
 					$.setScreenHeight,
 					"Assert method exists"
@@ -56,7 +55,6 @@
 				});
 			});
 			q.test("Screen Width", function (assert) {
-				assert.expect(7);
 				assert.ok(
 					$.setScreenWidth,
 					"Assert method exists"
