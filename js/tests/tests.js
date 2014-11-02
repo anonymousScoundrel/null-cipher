@@ -77,8 +77,8 @@
 					"Assert method should return window width as integer"
 				);
 			});
-			q.test("Resize event", function (assert) {
-				$(window).off("resize").on("resize", function () {
+			$(window).off("resize").on("resize", function () {
+				q.test("Resize event", function (assert) {
 					assert.strictEqual(
 						$.getScreenHeight(),
 						$(window).height(),
