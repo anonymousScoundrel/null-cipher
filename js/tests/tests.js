@@ -46,13 +46,6 @@
 					$(window).height(),
 					"Assert method should return window height as integer"
 				);
-				$(window).off("resize").on("resize", function () {
-					assert.strictEqual(
-						$.getScreenHeight(),
-						$(window).height(),
-						"Assert method should return window height as integer after resize event"
-					);
-				});
 			});
 			q.test("Screen Width", function (assert) {
 				assert.ok(
@@ -83,7 +76,14 @@
 					$(window).width(),
 					"Assert method should return window width as integer"
 				);
+			});
+			q.test("Resize event", function (assert) {
 				$(window).off("resize").on("resize", function () {
+					assert.strictEqual(
+						$.getScreenHeight(),
+						$(window).height(),
+						"Assert method should return window height as integer after resize event"
+					);
 					assert.strictEqual(
 						$.getScreenWidth(),
 						$(window).width(),
