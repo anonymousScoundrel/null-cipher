@@ -28,7 +28,7 @@
 
     $(window).load(function () {
 		$(document).ready(function () {
-            $(window).resize(function () {
+            $(window).off("resize").on("resize", function () {
                 $.setScreenHeight();
                 $.setScreenWidth();
             });
