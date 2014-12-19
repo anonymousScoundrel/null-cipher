@@ -39,7 +39,7 @@
                 $.setScreenWidth();
             });
 
-            $("article").onepage-scroll({
+            $("article").onepage_scroll({
                 "sectionContainer": "section",
                 "easing": "ease",
                 "animationTime": 1000,
