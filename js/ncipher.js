@@ -40,14 +40,14 @@
             });
 
             $("article").onePageScroll({
-                "sectionContainer": "section",
-                "easing": "ease",
-                "animationTime": 1000,
-                "pagination": true,
-                "updateURL": false,
-                "loop": false,
-                "keyboard": true,
-                "direction": "vertical"
+                // "sectionContainer": "section",
+                // "easing": "ease",
+                // "animationTime": 1000,
+                // "pagination": true,
+                // "updateURL": false,
+                // "loop": false,
+                // "keyboard": true,
+                // "direction": "vertical"
             });
 
 		});
