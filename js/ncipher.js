@@ -38,6 +38,18 @@
                 $.setScreenHeight();
                 $.setScreenWidth();
             });
+
+            $("article").onepage-scroll({
+                "sectionContainer": "section",
+                "easing": "ease",
+                "animationTime": 1000,
+                "pagination": true,
+                "updateURL": false,
+                "loop": false,
+                "keyboard": true,
+                "direction": "vertical"
+            });
+
 		});
     });
     
