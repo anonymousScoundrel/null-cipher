@@ -2,3 +2,7 @@
 /node_modules
 .env
 github-event.php
+.ftpquota
+ajax.php
+error_log
+index.php
